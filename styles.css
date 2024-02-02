@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  text-transform: capitalize;
+}
+
+img,
+svg {
+  width: 350px;
+  margin-top: 1em;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn__container {
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+  margin-top: 0.8em;
+}
+
+button {
+  border: none;
+  outline: transparent;
+  padding: 12px 10px;
+  border-radius: 6px;
+}
+
+#btn {
+  background-color: red;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#convince {
+  background-color: lightgreen;
+  font-size: 16px;
+  cursor: pointer;
+}
