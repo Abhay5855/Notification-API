@@ -8,21 +8,21 @@ document.addEventListener("DOMContentLoaded", () => {
     function handleNotification() {
       Notification.requestPermission().then((result) => {
         if (result === "granted") {
-          alert("Maan gaye");
+          alert("You have my permission");
           btn.style.display = "none";
         } else {
-          alert("Main nahi maan rahe/raha");
+          alert("No we won't allow");
         }
       });
     }
 
     function handleConvince() {
-      const notification = new Notification("Khana khaya kya", {
-        body: "Aap nahi kahogi toh main bhi nahi khaunga",
+      const notification = new Notification("Thank you !", {
+        body: "Goa is on!",
       });
 
       if (Notification.permission != "granted") {
-        alert("Abe pahele permission le");
+        alert("Take Permission first");
       }
     }
   }
